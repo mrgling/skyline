@@ -61,30 +61,13 @@ nav {
 
 .bottom-bar {
     /* height: 2rem; */
-    border-top: solid 2px #004C8E;
+    border-top: solid 2px #091F2C;
 }
 
 /* Main section */
 
 main {
     background: rgb(255, 255, 255);
-}
-
-/*Grid Gallery*/
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-template-rows: auto;
-    max-width: 60rem;
-    margin: auto;
-}
-  
-.gallery-item {
-    height: 100%;
-    width: 100%;
-    padding: 0.1rem;
-    background: rgb(0, 0, 0);
-    justify-items: center;
 }
 
 /*Auto parts*/
@@ -137,7 +120,7 @@ main {
 
 /*Borders*/
 .blueborder {
-    border-top: 3px solid #004C8E;
+    /* border-top: 3px solid #004C8E; */
     border-bottom: 3px solid #004C8E;
 }
 
@@ -145,11 +128,6 @@ main {
     border-bottom: 2px solid rgb(126, 126, 126);
 }
 
-/*Animations*/
-@keyframes fade-in {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
 
 /* REUSABLE CODE */
 
@@ -177,6 +155,10 @@ main {
     flex-direction: column;
 }
 
+.margin05 {
+    margin: 1rem;
+}
+
 .margin1 {
     margin: 1rem;
 }
@@ -199,6 +181,10 @@ main {
 
 .black {
     background-color: black;
+}
+
+.darkblue {
+    background-color: #091F2C
 }
 
 .white {
@@ -259,7 +245,7 @@ main {
 
 textarea:focus {
     outline: none;
-    border-color: rgb(255, 0, 0);
+    border-color: #004C8E;
 }
 
 .p-form {
@@ -270,7 +256,7 @@ textarea:focus {
     margin: 0.5rem 0;
     padding: 0rem;
 }
- 
+
 .contact-h2 {
     text-align: left;
 }
@@ -280,18 +266,18 @@ input {
     margin: 0.5rem 0rem 0rem 0rem;
     width: 15rem;
 }
-  
+
 input:valid {
     border: 2px solid rgb(54, 163, 33);
-  }
+}
 
 input:focus {
     outline: none;
-    border-color: rgb(255, 0, 0);
+    border-color: #091F2C;
 }
 
 .bottom-border {
-    border-bottom: solid 3px rgb(145, 0, 0);
+    border-bottom: solid 3px #004C8E;
 }
 
 /*red submit button and textarea styling*/
@@ -303,7 +289,7 @@ input:focus {
     color: rgb(255, 255, 255);
     height: 2.5rem;
     text-decoration: none;
-    background-color: rgb(145, 0, 0);
+    background-color: #004C8E;
     align-items: center;
     box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
     font-size: 1.2rem;
@@ -314,7 +300,7 @@ input:focus {
     text-decoration: none;
     color: white;
     transition: 1s;
-    background-color: rgb(255, 0, 0);
+    background-color: #091F2C;
 }
 
 textarea {
@@ -330,14 +316,14 @@ textarea {
 
 form {
     animation: 2s form ;
-
+    
 }
 
 .contact-form {
     animation: 2s contactform ;
 }
 
-@keyframes textarea {
+/* @keyframes textarea {
     0% {margin-top: 100%;}
 }
 
@@ -345,16 +331,15 @@ form {
     0% {padding-right: 100%;}
     100% {padding-left: 0%;}   
 }
-    
+
 @keyframes contactform {
     0% {padding-left: 100%;}
     100% {padding-right: 0%;}  
-}
+} */
 
 /*footer menu and box styling*/
 .footer-wrapper-xl {
-    background-color: black;
-    border-top: solid 3px rgb(145, 0, 0);
+    background-color: #091F2C;
 }
 
 .bottom-menu {
@@ -381,7 +366,7 @@ form {
 }
 
 .a-bottom:hover {
-    color: red;
+    color: #091F2C;
     text-decoration: none;
     transition: 1s;
 }
@@ -395,171 +380,174 @@ form {
 
 /*Breakpoint 576px*/
 @media (max-width: 575.98px) { 
-
+    
     /*nav bar*/ 
-        .nav-ul {
-            display: none;
-        } 
-       
+    .nav-ul {
+        display: none;
+    } 
+    
     /*Main*/ 
-        h1 {
+    h1 {
         font-size: 2rem;
-        }
-    
-        h2 {
-            font-size: 1.5rem;
-        }
-    
-        h3 {
-            font-size: 1.5rem;
-        }
     }
     
+    h2 {
+        font-size: 1.5rem;
+    }
     
-    @media (min-width: 575.99px) { 
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 575.99px) { 
     
     /*nav bar*/ 
-        .top-icon {
-            visibility: hidden;
-        }    
-    }
-    
-    /*Breakpoint 768px*/
-    @media screen and (min-width: 767.99px) {
+    .top-icon {
+        visibility: hidden;
+    }    
+}
+
+/*Breakpoint 768px*/
+@media screen and (min-width: 767.99px) {
     
     /*contact form*/    
-        .footer-wrapper-xl {
-            flex-direction: row;
-            justify-content: space-around;
-        }
+    .footer-wrapper-xl {
+        flex-direction: row;
+        justify-content: space-around;
+    }
     
     /*footer*/
-        .bottom-icon {
-            font-size: 3rem;
-        }
-    
-        footer {
-            flex-direction: column;
-            justify-content: space-evenly;
-        }
-    
-        .Rspan {
-            display: none;
-        }
-    
-        .bottom-menu {
-            padding: 2rem 0rem 2rem 0rem;
-        }
-    
+    .bottom-icon {
+        font-size: 3rem;
     }
     
-    /*Breakpoint 758px*/
-    /*break point added to resize sidebar text due to sidebar overflow onto carousel*/
-    @media (max-width: 757px) { 
+    footer {
+        justify-content: space-around;
+    }
+    
+    .Rspan {
+        display: none;
+    }
+    
+    .bottom-menu {
+        padding: 2rem 0rem 2rem 0rem;
+    }
+    
+}
+
+/*Breakpoint 758px*/
+@media (max-width: 757px) { 
     /*header*/ 
-        .sidebar {
-            display: none;
-        }
+    .sidebar {
+        display: none;
+    }
     
-        .a-top {
-            font-size: 0.6em;
-        }
+    .a-top {
+        font-size: 0.6em;
+    }
     
-        .bottom-bar{
-            display: none;
-        }  
+    .bottom-bar{
+        display: none;
+    }  
     
     /*contact form*/ 
-       .font {
-            font-family: 'Raleway', sans-serif;
-            display: none;
-        }
-    
-        textarea {
-            width: 80%;
-            height: 10rem;
-        }
-    
-        .p-form {
-            text-align: center;
-        }
-    
-        .right {
-            align-items: center;
-        }
-    
-        .form-padding {
-            padding: 2rem 0rem 5rem 0rem;
-        }
+    .font {
+        font-family: 'Raleway', sans-serif;
+        display: none;
     }
     
-    /*Breakpoint 768px*/
-    @media (min-width: 767.98px) { 
+    textarea {
+        width: 80%;
+        height: 10rem;
+    }
     
-     /*nav bar*/   
-        .logo {
-            margin: 0.5em;
-        }  
+    .p-form {
+        text-align: center;
+    }
+    
+    .right {
+        align-items: center;
+    }
+    
+    .form-padding {
+        padding: 2rem 0rem 5rem 0rem;
+    }
+}
+
+/*Breakpoint 768px*/
+@media (min-width: 767.98px) { 
+    
+    /*nav bar*/   
+    .logo {
+        margin: 0.5em;
+    }  
     
     /*sidebar*/
-        .a-sidebar {
-            font-size: 0.5em;
-        }
+    .a-sidebar {
+        font-size: 0.5em;
     }
-    
-    /*Breakpoint 992px*/
-    @media (min-width: 991.98px) { 
+}
+
+/*Breakpoint 992px*/
+@media (min-width: 991.98px) { 
     
     /*nav bar*/
-        .a-top {
-            font-size: 1em;
-        }
-    
-        .logo {
-            height: 2rem;
-        }
-    
-    /*sidebar*/
-        .a-sidebar {
-            font-size: 0.8em; 
-        }
-    
-        .h-sidebar {
-            font-size: 2em;
-        }
+    .a-top {
+        font-size: 1em;
     }
     
-    /*Breakpoint 1200px*/
-    @media (min-width: 1199.98px) {    
-    
-    /*nav bar*/
-        
-       
-        .a-top {
-            font-size: 1.3em;
-        }
-    
-        .logo {
-            height: 3em;
-        }
+    .logo {
+        height: 2rem;
+    }
     
     /*sidebar*/
-        .sidebar {
-            padding: 2.5rem 0rem 0rem 2em;
-        }
+    .a-sidebar {
+        font-size: 0.8em; 
+    }
     
-        .a-sidebar {
-            font-size: 1em;
-            padding: 0.3rem 0rem 0.3rem 0rem;
-        }
+    .h-sidebar {
+        font-size: 2em;
+    }
+}
+
+/*Breakpoint 1200px*/
+@media (min-width: 1199.98px) {    
     
-         .h-sidebar {
-            font-size: 2.2em;
-        }
-       
+    /*nav bar*/
+    
+    
+    .a-top {
+        font-size: 1.3em;
+    }
+    
+    .logo {
+        height: 3em;
+    }
+    
+    /*sidebar*/
+    .sidebar {
+        padding: 2.5rem 0rem 0rem 2em;
+    }
+    
+    .a-sidebar {
+        font-size: 1em;
+        padding: 0.3rem 0rem 0.3rem 0rem;
+    }
+    
+    .h-sidebar {
+        font-size: 2.2em;
+    }
+    
     /*main*/
-        .gallery {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
+    .gallery {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
+}
+    /*Animations*/
+    @keyframes fade-in {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+      }
