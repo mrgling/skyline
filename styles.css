@@ -78,7 +78,7 @@ main {
 }
 
 .auto-box {
-    background-image: linear-gradient(20deg, rgb(212, 212, 212), white);
+    /* background-image: linear-gradient(20deg, rgb(212, 212, 212), white); */
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     border: 1px solid black;
     margin: 1rem;
@@ -214,6 +214,8 @@ main {
 
 .text-align {
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 .text-left {
