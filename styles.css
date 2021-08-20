@@ -10,7 +10,7 @@ html, body{
 }
 
 p, a, span {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -236,7 +236,7 @@ main {
 }
 
 .form-padding {
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 5rem 0rem 3rem 0rem;
 }
 
 .box-padding {
@@ -250,7 +250,7 @@ textarea:focus {
 
 .p-form {
     color: black;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-align: left;
     margin: 0.5rem 0;
@@ -320,22 +320,8 @@ form {
 }
 
 .contact-form {
-    animation: 2s contactform ;
+    margin-top: 3rem;
 }
-
-/* @keyframes textarea {
-    0% {margin-top: 100%;}
-}
-
-@keyframes form {
-    0% {padding-right: 100%;}
-    100% {padding-left: 0%;}   
-}
-
-@keyframes contactform {
-    0% {padding-left: 100%;}
-    100% {padding-right: 0%;}  
-} */
 
 /*footer menu and box styling*/
 .footer-wrapper-xl {
@@ -350,7 +336,7 @@ form {
 }
 
 .h3-bottom {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0.4rem 0rem 0rem 0rem;
     text-decoration: none;
     color: rgb(122, 122, 122);
@@ -359,7 +345,7 @@ form {
 }
 
 .a-bottom {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0rem 0rem 0.8rem 0rem;
     text-decoration: none;
     color: white;
@@ -372,7 +358,7 @@ form {
 }
 
 .copyright {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 0.6rem;
     text-align: center;
@@ -380,6 +366,14 @@ form {
 
 /*Breakpoint 576px*/
 @media (max-width: 575.98px) { 
+
+    .top-icon {
+        visibility: visible;
+    }   
+
+    .auto-box {
+        margin: 3rem;
+    }
     
     /*nav bar*/ 
     .nav-ul {
@@ -454,7 +448,7 @@ form {
     
     /*contact form*/ 
     .font {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto', sans-serif;
         display: none;
     }
     
