@@ -30,7 +30,9 @@
                         <li><a href="#products" class="a-top">PRODUCTS</a></li>
                         <li><a href="#contact" class="a-top">CONTACT</a></li>
                     </ul>
+                    <a href="#">
                     <span class="material-icons bottom-icon margin05 .d-block .d-sm-none" style="color: rgb(0, 0, 0);">menu</span>
+                    </a>
             </nav>
 
                 </div>
@@ -44,7 +46,8 @@
                 <div class="row">
                     <div class="col-md-12" style="height: 400px;">
                         <div class="flex column vertical spacing">
-                            <h1 class="flex h1-services grayborder">SKYLINE</h1>
+                            <img src="assets/logo.png" alt="Symbol" style="width: 20rem;">
+                            <!-- <h1 class="flex h1-services grayborder">SKYLINE</h1> -->
                         </div>
                     </div>
                 </div>
@@ -59,13 +62,13 @@
                 </div>
             </div>
                 <!--Info boxes-->
-                <div class="container">
+                <div class="container" style="height: 800px" id="info-mq">
                     <div class="row spacing">
                         <div class="col-sm-12">
                             <div class="info-section">
                                 <div class="info-box">
                                     <div class="flex column vertical">
-                                        <h3 class="flex margin2 h1-services grayborder" id="info">Information</h3>
+                                        <h3 class="flex margin2 h1-services grayborder" id="info" style="margin-top: 5rem">Information</h3>
                                     </div>
                                     <!-- <h4>1</h4> -->
                                     <p class="p-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga quia doloremque sed itaque a veritatis harum ipsa, atque debitis ex ducimus fugit voluptatem natus molestias commodi? Ut, iste minima.</p>
@@ -150,13 +153,17 @@
 
         </main>  
         <div class="form-padding">
+            <div class="col-md-12 nopadding black blueborder">
+            </div>
             <!--Contact Form-->
             <div class="container">
                 <div class="row vertical">
                     <div class="col-md-6 order-md-1 order-2">
                         <div class="flex-form">
                             <form action="#" class="flex column right form-margin box-padding" method="post">
-                                <h2 class="contact-h2 bottom-border" id="contact">Contact</h2>
+                                <div class="flex column vertical">
+                                    <h3 class="flex margin2 h1-services grayborder" id="contact">Contact</h3>
+                                </div>
                                 <div class="flex-row">
                                     <label for="text" class="font">*</label>
                                     <input type="text" id="text" required placeholder="Name">
